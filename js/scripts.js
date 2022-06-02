@@ -6,10 +6,14 @@ $(document).ready(function() {
     const number3 = parseInt($("#input3").val());
 
     if (number1 === number2 && number1 === number3) {
-      $("#Equilateral").show();
+      $("#equilateral").show();
     } else if (number1 === number2 && number1 !== number3 && number1 + number2 > number3) {
-      $("#Isosceles").show(); 
-    } else if (number1 !== number2 && number1 !==number3 && number2 !== number3 && number1 + number2 > number 3 || number2 + number3 > number1 || number1 + number3 > number2) {
+      $("#isosceles").show(); 
+    } else if (number1 !== number2 && number1 !==number3 && number2 !== number3 && number1 + number2 > number3 || number2 + number3 > number1 || number1 + number3 > number2) {
+      $("#scalene").show();
     } else {
-      
-    }
+      $("#notATriangle").show();
+      }
+  });
+});
+// I'm here!
