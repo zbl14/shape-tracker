@@ -1,4 +1,4 @@
-# Triangle Tracker
+# Shape Tracker
 
 #### By Zhibin Liang and Sandra Tena
 
