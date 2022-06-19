@@ -1,4 +1,5 @@
 import { Triangle } from './triangle.js';
+import './css/styles.css';
 
 $(document).ready(function() {
   $("form#triangle").submit(function(event) {
@@ -8,6 +9,6 @@ $(document).ready(function() {
     const length3 = parseInt($("#length3").val());
     const triangle = new Triangle(length1, length2, length3)
     const response = triangle.checkType();
-    $('#response').append("<p>" + response + "</p>");
+    $('#response').show().append("<p>" + response + "</p>");
   });
 });
