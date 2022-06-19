@@ -1,6 +1,7 @@
 import { Triangle } from './triangle.js';
 import './css/styles.css';
 import $ from 'jquery';
+import 'bootstrap';
 
 $(document).ready(function() {
   $("form#triangle").submit(function(event) {
