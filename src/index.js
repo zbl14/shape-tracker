@@ -1,5 +1,6 @@
 import { Triangle } from './triangle.js';
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import $ from 'jquery';
 
@@ -7,7 +8,6 @@ import $ from 'jquery';
 $(document).ready(function() {
   $("form#triangle").submit(function(event) {
     event.preventDefault();
-    debugger;
     const length1 = parseInt($("#length1").val());
     const length2 = parseInt($("#length2").val());
     const length3 = parseInt($("#length3").val());
